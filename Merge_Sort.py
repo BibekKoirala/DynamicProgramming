@@ -1,6 +1,3 @@
-import random
-res = [None for i in range(6)]
-
 
 def merge_sort(arr):
 
@@ -15,23 +12,24 @@ def merge_sort(arr):
         i = j = k = 0
         while i < len(L) and j < len(R):
             if L[i] < R[j]:
-                res[k] = L[i]
+                arr[k] = L[i]
                 i += 1
             else:
-                res[k] = R[j]
+                arr[k] = R[j]
                 j += 1
             k += 1
 
         while i < len(L):
-            res[k] = L[i]
+            arr[k] = L[i]
             i += 1
             k += 1
 
         while j < len(R):
-            res[k] = R[j]
+            arr[k] = R[j]
             j += 1
             k += 1
 
 
-merge_sort([12, 11, 13, 5, 6, 7])
-print(res)
+ar = [12, 1, 13, 5, 6, 7]
+merge_sort(ar)
+print(ar)
