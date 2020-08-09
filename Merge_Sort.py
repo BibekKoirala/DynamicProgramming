@@ -1,6 +1,4 @@
-
 def merge_sort(arr):
-
     if len(arr) > 1:
         mid = len(arr) // 2
         L = arr[:mid]
@@ -30,6 +28,11 @@ def merge_sort(arr):
             k += 1
 
 
+
 ar = [12, 1, 13, 5, 6, 7]
+rr = 0
+
+
+
 merge_sort(ar)
 print(ar)
